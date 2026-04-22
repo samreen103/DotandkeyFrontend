@@ -51,7 +51,7 @@ function ManageOrders()
                                     {order.items.map((item,index)=>(
                                         <div key={index}>
                                             {item.name}<br></br>
-                                            <img src={`http://localhost:3001/images/${item.file}`} width="60" height="60" />
+                                            <img src={item.file} width="60" height="60" />
 
                                         </div>
                                     ))}

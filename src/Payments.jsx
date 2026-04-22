@@ -87,7 +87,8 @@ const placeOrder =async () => {
          address: address,
          payment: "Razorpay",
          total: total,
-         paymentId:response.razorpay_payment_id
+         paymentId:response.razorpay_payment_id,
+         userId:user._id
         
       });
       alert("Payment succesful")
